@@ -22,7 +22,7 @@ a {
     -o-transition: all.6s ease;
     -moz-transition: all.6s ease;
     -webkit-transition: all.6s ease;
-    
+    opacity: 1;
 }
 
 a:hover {
@@ -61,6 +61,7 @@ header {
     float: left;
     background-color: dimgrey;
     width: 99.4%;
+	height: 10%;
     padding: 0.3%;
     border-bottom: 5x solid #59595a;
     
@@ -89,18 +90,23 @@ header>div#logo>a>img {
 
 #logo {
     float: left;
-    width: 30%;
+    width: 15%;
+	padding-top: 1%;
+}
+#logo>p {
+	size: 11px;
 }
 
 #about {
     float: left;
-    width: 40%;
+    width: 65%;
 }
 
 
 #reg_auth {
     float: right;
-    width: 10%;
+    width: 15%;
+	padding-top: 1%;
     
 }
 
@@ -108,14 +114,18 @@ header>div#logo>a>img {
 #about {
     
     font-family: 'Roboto Slab', serif;
-    font-size: 1.4em;
-    padding-top: 10px; 
+    font-size: 1.1em;
+	padding: 0%; 
     float: left;
-    width: 40%;
+    width: 50%;
     text-align: center;
+	margin: 1% 0% 1% 3%;
+	padding-top: 1%;
 }
 #about>a {
     color: white;
+	margin-left: 8%;
+
     
 }
 #about>a:hover {
@@ -130,24 +140,30 @@ header>div#logo>a>img {
 
 #reg_auth>a {
 color: white;
+
 }
 
 #reg_auth>a:hover>div {
-    border-bottom: 4px solid rgba(217, 31, 72, 0);
-    margin-top: 10px;
+ 	opacity: 1;
+	transition-property: opacity;
+	transition-duration: .2s;
+	transition-timing-function: linear;
+    margin-right: 4%;  
     
 }
 #reg_auth>a:active>div {
-    border-bottom: 1px;
-    margin-top: 9px;
+    margin-right: 4%;
     
 }
 #reg_auth>a>div {
-    float: right;
+    opacity: 0.3;
+	margin-left: 20px;
+	text-align: center;
+	position: relative;
     margin-right: 0%;
-    margin-top: 2px;
-    border-radius: 20px;
-    padding: 3px 6px;
+    margin-top: 10px;
+    margin-bottom: 0%;
+    padding: 3px 3px;
     font-size: 1.1em;
     background-color: darkgray;
     text-shadow: #454545 0 0 2px;
@@ -168,16 +184,49 @@ nav {
     display: flex;
     flex-direction: column;
     height: 100%;
+	width: 80%;
+	margin-left: 10%;
     
 }
 #content {
     flex: 1 0 auto;
+}
+#fstclmn {
+	margin: 3% 0%;
+	width: 15%;
+	height:80%;
+	background-color: darkgray;
+	border: 3px;
+	border-color: black;
+	position:relative;
+	float:left;
+}
+#cntrclmn {
+	margin: 3% 2% 3% 2%;
+	width: 66%;
+	height:80%;
+	background-color: darkgray;
+	border: 3px;
+	border-color: black;
+	position:relative;
+	float:left;
+}
+#rghtclmn {
+	margin: 3% 0%;
+	width: 15%;
+	height:80%;
+	background-color: darkgray;
+	border: 3px;
+	border-color: black;
+	position: relative;
+	float: right;
 }
 
 footer {
    float: left;
     background-color: #343434;
     width: 98%;
+	height:10%;
     padding: 1%;
     border-top: 5x solid #59595a;
     font-family: 'Roboto Slab', serif;
@@ -216,7 +265,7 @@ footer {
     float: right;
     margin-left: 20%;
     font-size: 1em;
-    margin-top: 20px;
+
     
 }
 #rights>a {
@@ -229,4 +278,7 @@ footer {
     float: right;
     width: 50%;
     text-align: center;
+}
+*{
+    font-family: Areal;
 }
